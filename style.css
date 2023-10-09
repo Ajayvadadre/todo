@@ -6,7 +6,7 @@
 }
 #container{
     display: flex;
-    background-color: #D8B4F8;
+    background-color: #f8b0b2;
     height: 100vh;
     width: 100vw;
     justify-content: center;
@@ -15,7 +15,7 @@
 }
 #header{
     position: absolute;
-    background-color: #CAEDFF;
+    background-color: #fefdf6;
     width: 100vw;
     height: 270px;
     display: flex;
@@ -29,48 +29,67 @@
 }
 #list{
     position: absolute;
-    background-color: #f4e27b;
+    background-color: #f17978;
     height: 450px;
     width: 500px;
     margin-top: 250px;
     border-radius: 10px;
+    box-shadow: 10px 10px 0px 0.5px black
 }
 #input{
     position: absolute;
-    background-color: #080202;
+    /* background-color: #080202; */
     height: 40px;
     width: 500px;
     margin-top: 180px;
     border-radius: 10px;
+    padding: 10px 10px;
 }
 #input #inputTask{
-    border: none;
+    border: 2px solid black;
     width:100%;
     height: 100%;
     border-radius: 10px;
+    padding:20px 10px;
 }
 ::placeholder{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    padding-left: 20px;
 }
 #header #btnAdd{
     position: absolute;
     display: inline;
-    margin-left: 40%;
-    margin-top: 11.5%;
+    margin-left: 43%;
+    margin-top: 12.3%;
     height: 45px;
     width: 80px;
     border-radius: 40px;
     font-weight: 700;
+    box-shadow: 5px 5px 0px 0px black;
     
 }
-/* #header #imaa{ */
-    /* display: inline; */
-
-       /* object-fit:cover;
-       width:100%;
-       height: 100%;
-} */
-/* #header #todo   {
+#header #btnAdd :hover{
+    transform: scale(5);
+    cursor: pointer;
+}
+#header #btnAdd :active{
+    transform: scale(20);
+}
+.delete{
+    border: none;
+    /* border-radius: 50%; */
+    background-color: transparent;
+    padding: 3px;
     position: absolute;
+    right: 0;
+    /* color: red; */
+}
+.complete{
+    text-decoration: line-through;
+    opacity: 0.75;
+}
+/* #list #taskList{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-;
+
 } */
