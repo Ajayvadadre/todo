@@ -58,3 +58,15 @@ btnAdd.onclick = () => {
 }
 
 displayTask()
+
+var input = document.getElementById("inputTask")
+input.addEventListener("keypress", function(event){
+    let task = inputTask.value.trim()
+    if(event.key==="Enter"){
+        let newTask = { text: task, completed: false }
+        tasks.push(newTask)
+        saveTask()
+        inputTask.value = ""
+        displayTask()
+    }
+})
